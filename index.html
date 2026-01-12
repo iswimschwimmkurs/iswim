@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>iSwim Schwimmschule – Mannheim & Viernheim</title>
+<meta name="description" content="iSwim Schwimmschule (Shokre Alawad). Seit 2018. Seepferdchen, Bronze/Silber, Erwachsene. Kleine Gruppen. Anmeldung online." />
+
 <style>
 :root{
   --bg:#f6fbff;
@@ -45,7 +53,7 @@ header{
   font-weight:900;letter-spacing:.2px;
 }
 .brand img{border-radius:10px}
-.links{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+.links{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .links a{
   text-decoration:none;color:var(--deep);
   font-weight:650;opacity:.86;
@@ -94,7 +102,7 @@ header{
 /* Hero (Premium) */
 .hero{
   position:relative;overflow:hidden;text-align:center;
-  padding:10px 0 0;
+  background:linear-gradient(180deg, rgba(246,251,255,0) 0%, rgba(255,255,255,.75) 55%, rgba(255,255,255,1) 100%);
 }
 .hero .inner{
   max-width:1120px;margin:0 auto;
@@ -107,11 +115,10 @@ header{
   box-shadow: 0 18px 45px rgba(6,31,53,.12);
 }
 .hero h1{margin:10px 0 10px;font-size:42px;line-height:1.1;color:var(--deep)}
-.sub{font-size:18px;margin:0 0 20px;color:var(--muted)}
-/* Premium Trust chips */
+.sub{font-size:18px;margin:0 0 18px;color:var(--muted)}
 .trust{
   display:flex;gap:10px;justify-content:center;flex-wrap:wrap;
-  margin:16px 0 22px;
+  margin:12px 0 22px;
 }
 .chip{
   display:inline-flex;gap:8px;align-items:center;
@@ -119,13 +126,13 @@ header{
   border:1px solid var(--line);
   background:rgba(255,255,255,.72);
   box-shadow: 0 10px 24px rgba(6,31,53,.06);
-  color:var(--deep);font-weight:700;font-size:13px;
+  color:var(--deep);font-weight:750;font-size:13px;
 }
 .cta{
   display:inline-flex;align-items:center;justify-content:center;
   background: linear-gradient(180deg, #0b6fa4 0%, #075d8d 100%);
   color:#fff;padding:12px 18px;border-radius:14px;
-  font-weight:800;text-decoration:none;
+  font-weight:850;text-decoration:none;
   box-shadow: 0 16px 34px rgba(11,111,164,.22);
   transition: all .18s ease;
 }
@@ -139,7 +146,6 @@ header{
 .cta.secondary:hover{box-shadow: 0 22px 44px rgba(6,31,53,.10)}
 .hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 
-/* Subtle waves */
 .waves{
   position:absolute;inset:-120px -80px -40px -80px;opacity:.22;
   background:
@@ -155,7 +161,7 @@ section{padding:64px 0}
 h2{font-size:30px;color:var(--deep);margin:0 0 14px;text-align:center}
 .container{max-width:1120px;margin:0 auto;padding:0 16px}
 
-/* Cards / grids premium */
+/* Badge-Karten / Cards premium */
 .badge-grid,.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
 .badge-card,.card{
   background:rgba(255,255,255,.86);
@@ -167,7 +173,12 @@ h2{font-size:30px;color:var(--deep);margin:0 0 14px;text-align:center}
 }
 .badge-card:hover,.card:hover{transform: translateY(-3px);box-shadow: var(--shadow)}
 .badge-head{display:flex;align-items:center;gap:12px}
-.badge-img{width:78px;height:78px;object-fit:contain;border-radius:16px;background:rgba(246,251,255,.9);border:1px solid var(--line);padding:8px}
+.badge-img{
+  width:78px;height:78px;object-fit:contain;border-radius:16px;
+  background:rgba(246,251,255,.9);
+  border:1px solid var(--line);
+  padding:8px
+}
 .badge-title{margin:0;font-size:20px;color:var(--deep)}
 .req{padding-left:20px;margin:8px 0}
 .req li{margin:4px 0}
@@ -214,3 +225,367 @@ footer a:hover{text-decoration:underline}
 .footer-links{margin:8px 0 10px}
 .small{font-size:12.5px;opacity:.9;line-height:1.5}
 </style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="logo.png" width="36" height="36" alt=""> iSwim Schwimmschule</a>
+    <label for="nav-toggle" class="burger">☰</label>
+    <input type="checkbox" id="nav-toggle" hidden>
+    <div class="links">
+      <a href="#kurse" class="de">Kurse</a><a href="#kurse" class="en hide">Courses</a>
+      <a href="#preise" class="de">Preise</a><a href="#preise" class="en hide">Prices</a>
+      <a href="#warum" class="de">Warum iSwim</a><a href="#warum" class="en hide">Why iSwim</a>
+      <a href="#eltern" class="de">Infos</a><a href="#eltern" class="en hide">Info</a>
+      <a href="#baderegeln" class="de">Baderegeln</a><a href="#baderegeln" class="en hide">Rules</a>
+      <a href="#anmeldung" class="de">Anmeldung</a><a href="#anmeldung" class="en hide">Register</a>
+      <a href="#kontakt" class="de">Kontakt</a><a href="#kontakt" class="en hide">Contact</a>
+    </div>
+    <div class="lang">
+      <button id="btn-de" class="active" onclick="setLang('de')">DE</button>
+      <button id="btn-en" onclick="setLang('en')">EN</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="waves"></div>
+  <div class="inner">
+    <img src="logo.png" alt="iSwim Logo" class="logo" />
+    <h1 class="de">iSwim Schwimmschule</h1>
+    <h1 class="en hide">iSwim Swim School</h1>
+
+    <p class="sub de">Schwimmen lernen – sicher, strukturiert und mit Spaß · Kurse seit 2018</p>
+    <p class="sub en hide">Learn to swim – safe, structured and fun · Courses since 2018</p>
+
+    <div class="trust">
+      <span class="chip de">✅ Seit 2018</span>
+      <span class="chip en hide">✅ Since 2018</span>
+
+      <span class="chip de">👨‍👩‍👧 Kleine Gruppen</span>
+      <span class="chip en hide">👨‍👩‍👧 Small groups</span>
+
+      <span class="chip de">🏅 Sicher & strukturiert</span>
+      <span class="chip en hide">🏅 Safe & structured</span>
+    </div>
+
+    <div class="hero-actions">
+      <a class="cta de" href="#anmeldung">Jetzt anmelden</a>
+      <a class="cta en hide" href="#anmeldung">Register now</a>
+
+      <a class="cta secondary de" href="#kurse">Kurse ansehen</a>
+      <a class="cta secondary en hide" href="#kurse">View courses</a>
+    </div>
+  </div>
+</section>
+
+<!-- KURSE & ABZEICHEN -->
+<section id="kurse">
+  <div class="container">
+    <h2 class="de">Kurse & Abzeichen</h2>
+    <h2 class="en hide">Courses & Badges</h2>
+
+    <p class="de" style="text-align:center">
+      Kleine Gruppen · Seepferdchen <b>max. 7 Kinder</b> · Bronze & Silber <b>max. 12 Kinder</b> ·
+      10 Einheiten à 60 Minuten · <b>ca. 50 Minuten Wassertraining</b>
+    </p>
+    <p class="en hide" style="text-align:center">
+      Small groups · Seahorse <b>max. 7 children</b> · Bronze & Silver <b>max. 12 children</b> ·
+      10 sessions of 60 minutes · <b>about 50 minutes in-water training</b>
+    </p>
+
+    <div class="badge-grid">
+      <div class="badge-card">
+        <div class="badge-head">
+          <img src="badge-seepferdchen.png" class="badge-img" alt="Seepferdchen">
+          <div>
+            <h3 class="badge-title de">Seepferdchen</h3>
+            <h3 class="badge-title en hide">Seahorse</h3>
+          </div>
+        </div>
+        <ul class="req de">
+          <li>Sprung vom Beckenrand</li><li>25 m schwimmen</li><li>Gegenstand aus schultertiefem Wasser holen</li><li>Kenntnis der Baderegeln</li>
+        </ul>
+        <ul class="req en hide">
+          <li>Jump from pool edge</li><li>Swim 25 m</li><li>Retrieve object from shallow water</li><li>Know pool rules</li>
+        </ul>
+        <div class="price de">Preis: 200 €</div>
+        <div class="price en hide">Price: €200</div>
+      </div>
+
+      <div class="badge-card">
+        <div class="badge-head">
+          <img src="badge-bronze.png" class="badge-img" alt="Bronze">
+          <div>
+            <h3 class="badge-title de">Bronze & Silber (ein Kurs)</h3>
+            <h3 class="badge-title en hide">Bronze & Silver (one course)</h3>
+          </div>
+        </div>
+        <ul class="req de">
+          <li>Bronze & Silber im Paket</li><li>Technik, Ausdauer & Sicherheit</li><li>Baderegeln</li>
+        </ul>
+        <ul class="req en hide">
+          <li>Bronze & Silver combined</li><li>Technique, endurance & safety</li><li>Pool rules</li>
+        </ul>
+        <div class="price de">Preis: 200 €</div>
+        <div class="price en hide">Price: €200</div>
+      </div>
+
+      <div class="badge-card">
+        <div class="badge-head">
+          <img src="badge-silber.png" class="badge-img" alt="Erwachsene">
+          <div>
+            <h3 class="badge-title de">Erwachsene (Gruppe)</h3>
+            <h3 class="badge-title en hide">Adults (group)</h3>
+          </div>
+        </div>
+        <ul class="req de">
+          <li>Technik & Wasserlage</li><li>Atmung & Ausdauer</li><li>Individuelle Korrekturen</li>
+        </ul>
+        <ul class="req en hide">
+          <li>Technique & body position</li><li>Breathing & endurance</li><li>Individual corrections</li>
+        </ul>
+        <div class="price de">Preis: 250 €</div>
+        <div class="price en hide">Price: €250</div>
+      </div>
+
+      <div class="badge-card">
+        <div class="badge-head">
+          <img src="badge-silber.png" class="badge-img" alt="Einzelunterricht">
+          <div>
+            <h3 class="badge-title de">Einzelunterricht</h3>
+            <h3 class="badge-title en hide">Private lesson</h3>
+          </div>
+        </div>
+        <ul class="req de">
+          <li>1:1 Betreuung</li><li>Individuelles Tempo</li><li>Gezielte Technik-Verbesserung</li>
+        </ul>
+        <ul class="req en hide">
+          <li>1:1 coaching</li><li>Individual pace</li><li>Targeted technique improvement</li>
+        </ul>
+        <div class="price de">Preis: 50 € pro Stunde</div>
+        <div class="price en hide">Price: €50 per hour</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PREISE (Extra Abschnitt) -->
+<section id="preise" style="background:rgba(255,255,255,.65)">
+  <div class="container">
+    <h2 class="de">Preise</h2>
+    <h2 class="en hide">Prices</h2>
+
+    <div class="grid" style="margin-top:18px">
+      <div class="card">
+        <h3 class="de">Seepferdchen</h3>
+        <h3 class="en hide">Seahorse</h3>
+        <p class="de"><b>200 €</b></p>
+        <p class="en hide"><b>€200</b></p>
+      </div>
+      <div class="card">
+        <h3 class="de">Bronze & Silber (ein Kurs)</h3>
+        <h3 class="en hide">Bronze & Silver (one course)</h3>
+        <p class="de"><b>200 €</b></p>
+        <p class="en hide"><b>€200</b></p>
+      </div>
+      <div class="card">
+        <h3 class="de">Erwachsene (Gruppe)</h3>
+        <h3 class="en hide">Adults (group)</h3>
+        <p class="de"><b>250 €</b></p>
+        <p class="en hide"><b>€250</b></p>
+      </div>
+      <div class="card">
+        <h3 class="de">Einzelunterricht</h3>
+        <h3 class="en hide">Private lesson</h3>
+        <p class="de"><b>50 € pro Stunde</b></p>
+        <p class="en hide"><b>€50 per hour</b></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="warum" style="background:transparent">
+  <div class="container">
+    <h2 class="de">Warum iSwim?</h2>
+    <h2 class="en hide">Why iSwim?</h2>
+    <div class="grid">
+      <div class="card"><h3>💧 Erfahrung & Vertrauen</h3><p>Seit 2018 begleite ich Kinder und Erwachsene auf ihrem Weg zum sicheren Schwimmer.</p></div>
+      <div class="card"><h3>👨‍👩‍👧 Kleine Gruppen</h3><p>Maximal 7 Teilnehmer pro Gruppe für individuelle Betreuung und Spaß.</p></div>
+      <div class="card"><h3>🏅 Qualität & Herz</h3><p>Als geprüfter Fachangestellter vermittle ich Technik, Freude und Sicherheit im Wasser.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Elterninfos -->
+<section id="eltern">
+  <div class="container">
+    <h2 class="de">Informationen für Eltern</h2>
+    <h2 class="en hide">Information for parents</h2>
+
+    <div class="card" style="max-width:900px;margin:auto">
+      <ul class="de">
+        <li><b>Eintritt:</b> Der Eintritt für die Kinder ist im Kurspreis enthalten. Kinder müssen keinen zusätzlichen Eintritt bezahlen.</li>
+        <li><b>Eltern:</b> Eltern haben Zugang bis zur Umkleide. Der Zutritt zur Schwimmhalle ist nur mit Eintritt möglich.</li>
+        <li><b>Nachholstunde:</b> Pro Kurs ist maximal <b>eine (1) Nachholstunde</b> möglich.</li>
+        <li><b>Schwimmhilfen:</b> Schwimmkursmaterialien werden gestellt. Eigene Materialien sind nicht erforderlich.</li>
+        <li><b>Wassertemperatur:</b> ca. <b>29&nbsp;°C</b>.</li>
+        <li><b>Bitte mitbringen:</b> Badebekleidung, Handtuch sowie Badeschlappen oder Badeschuhe.</li>
+        <li><b>Pünktlichkeit:</b> Bitte mindestens <b>10 Minuten vor Kursbeginn</b> vor Ort sein.</li>
+      </ul>
+
+      <ul class="en hide">
+        <li><b>Entry fee:</b> Pool entry for children is included in the course price. Children do not need to pay an extra entry fee.</li>
+        <li><b>Parents:</b> Parents have access up to the changing rooms. Entry to the pool area requires a separate ticket.</li>
+        <li><b>Make-up lesson:</b> A maximum of <b>one (1) make-up lesson</b> is possible per course.</li>
+        <li><b>Swimming equipment:</b> Swimming aids are provided. No personal equipment is required.</li>
+        <li><b>Water temperature:</b> approximately <b>29&nbsp;°C</b>.</li>
+        <li><b>Please bring:</b> Swimwear, towel, and flip-flops or pool shoes.</li>
+        <li><b>Punctuality:</b> Please arrive at least <b>10 minutes before</b> the course starts.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- BADEREGELN -->
+<section id="baderegeln" style="background:rgba(255,255,255,.65)">
+  <div class="container" style="text-align:center">
+    <h2 class="de">Baderegeln (PDF)</h2>
+    <h2 class="en hide">Swimming Rules (PDF)</h2>
+
+    <p class="de">Bitte lesen Sie die Baderegeln sorgfältig durch. Sie können das PDF ansehen oder herunterladen.</p>
+    <p class="en hide">Please read the swimming rules carefully. You can view or download the PDF.</p>
+
+    <div style="margin-top:18px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+      <a href="baderegeln.pdf" target="_blank" class="cta">📄 PDF ansehen</a>
+      <a href="baderegeln.pdf" download class="cta">⬇️ PDF herunterladen</a>
+    </div>
+  </div>
+</section>
+
+<section id="anmeldung">
+  <div class="container">
+    <h2 class="de">Jetzt anmelden</h2>
+    <h2 class="en hide">Register now</h2>
+
+    <form action="https://formspree.io/f/mnngkdlb" method="POST" class="card" style="max-width:720px;margin:auto">
+
+      <label class="de">Vor- und Nachname
+        <input type="text" name="name" required>
+      </label>
+
+      <label class="de">Alter
+        <input type="text" name="alter">
+      </label>
+
+      <label class="de">Telefon
+        <input type="tel" name="phone">
+      </label>
+
+      <label class="de">E-Mail
+        <input type="email" name="email" required>
+      </label>
+
+      <div class="form-row">
+        <label class="de">Straße & Hausnummer
+          <input type="text" name="strasse_hausnummer" placeholder="z.B. Lemaitrestraße 4">
+        </label>
+        <label class="de">Postleitzahl (PLZ)
+          <input type="text" name="plz" placeholder="z.B. 68309">
+        </label>
+      </div>
+
+      <label class="de">Stadt
+        <input type="text" name="stadt" placeholder="z.B. Mannheim">
+      </label>
+
+      <label class="de">Eintrittsmonat
+        <select name="eintrittsmonat">
+          <option value="">Bitte wählen…</option>
+          <option>Januar</option><option>Februar</option><option>März</option><option>April</option>
+          <option>Mai</option><option>Juni</option><option>Juli</option><option>August</option>
+          <option>September</option><option>Oktober</option><option>November</option><option>Dezember</option>
+        </select>
+      </label>
+
+      <label class="de">Kurs
+        <select name="kurs" required>
+          <option value="">Bitte wählen…</option>
+          <option>Seepferdchen (200 €)</option>
+          <option>Bronze & Silber (200 €)</option>
+          <option>Erwachsene Gruppe (250 €)</option>
+          <option>Einzelunterricht (50 € pro Stunde)</option>
+        </select>
+      </label>
+
+      <label style="margin-top:14px;font-weight:normal;color:var(--muted)">
+        <input type="checkbox" name="agb_zustimmung" required>
+        <span class="de">
+          Ich habe die <a href="agb.pdf" target="_blank">AGB</a> gelesen und akzeptiere diese.
+        </span>
+        <span class="en hide">
+          I have read and accept the <a href="agb.pdf" target="_blank">Terms & Conditions</a>.
+        </span>
+      </label>
+
+      <button type="submit" class="cta" style="margin-top:14px">Absenden</button>
+    </form>
+  </div>
+</section>
+
+<section id="kontakt" style="background:transparent;text-align:center">
+  <div class="container">
+    <h2 class="de">Kontakt & Bewertung</h2>
+    <h2 class="en hide">Contact & Review</h2>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;margin:20px 0">
+      <a href="https://wa.me/4915207439742" target="_blank" aria-label="WhatsApp"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="60"></a>
+      <a href="mailto:iswim.schwimmkurs@gmail.com" aria-label="E-Mail"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.svg" width="60"></a>
+      <a href="https://share.google/0039Yx2i4Gv103Scm" target="_blank" aria-label="Google Maps"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Google_Maps_Icon.svg" width="60"></a>
+    </div>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://iswimschwimmkurs.github.io/iswim/&size=130x130" alt="QR">
+  </div>
+</section>
+
+<section id="impressum" style="background:rgba(255,255,255,.65)">
+  <div class="container">
+    <h2 class="de">Impressum</h2>
+    <h2 class="en hide">Imprint</h2>
+
+    <div class="card" style="max-width:760px;margin:18px auto;text-align:left">
+      <p><b>iSwim Schwimmschule</b><br>
+      Inhaber: Shokre Alawad<br>
+      Lemaitrestraße 4<br>
+      68309 Mannheim<br>
+      Deutschland</p>
+
+      <p>E-Mail: <a href="mailto:iswim.schwimmkurs@gmail.com">iswim.schwimmkurs@gmail.com</a><br>
+      Telefon: <a href="tel:+4915207439742">+49 152 07439742</a></p>
+
+      <p>Rechtsform: Einzelunternehmen (Nebengewerbe) – Kleinunternehmer gemäß § 19 UStG</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="#impressum">Impressum</a> ·
+    <a href="datenschutz.pdf" target="_blank">Datenschutz</a> ·
+    <a href="agb.pdf" target="_blank">AGB</a> ·
+    <a href="baderegeln.pdf" target="_blank">Baderegeln</a>
+  </div>
+  <div class="small">© 2025 iSwim Schwimmschule · Shokre Alawad · Mannheim</div>
+</footer>
+
+<script>
+function setLang(l){
+  document.querySelectorAll('.de,.en').forEach(el=>{
+    el.classList.toggle('hide', !el.classList.contains(l));
+  });
+  document.getElementById('btn-de').classList.toggle('active', l==='de');
+  document.getElementById('btn-en').classList.toggle('active', l==='en');
+}
+</script>
+
+</body>
+</html>
